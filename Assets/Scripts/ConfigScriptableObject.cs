@@ -34,6 +34,12 @@ public class ConfigScriptablObject : ScriptableObject
     [SerializeField]
     public DemoHRNet.OneTexHrnetPoseDetect.Options hrnetOptions;
 
+    [SerializeField]
+    public OrtAsset e2poseModel;
+    [SerializeField]
+    public E2Pose.Options e2poseOptions;
+
+
     [Space]
     [SerializeField]
     public UIBoundingBox uiBoundingBox;

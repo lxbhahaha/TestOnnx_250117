@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5403f0703b66f1347a00ed3f9042b1c0, type: 3}
   m_Name: Config
   m_EditorClassIdentifier: 
-  yoloxModel: {fileID: 1840921532545725537, guid: 30a43567f1f2cc24980023112d785a63, type: 3}
+  yoloxModel: {fileID: 0}
   yoloxOptions:
     aspectMode: 1
     mean: {x: 0.485, y: 0.456, z: 0.406}
@@ -23,7 +23,7 @@ MonoBehaviour:
     maxDetections: 100
     probThreshold: 0.3
     nmsThreshold: 0.45
-  hrnet_256_192_Model: {fileID: 1840921532545725537, guid: a89d0ab7bbad5224e803158dd980475e, type: 3}
+  hrnet_256_192_Model: {fileID: 0}
   hrnetOptions:
     aspectMode: 1
     mean: {x: 0.485, y: 0.456, z: 0.406}
@@ -31,4 +31,14 @@ MonoBehaviour:
     executionProvider:
       executionProviderPriorities: 0100000002000000
     maxBatch: 0
+  e2poseModel: {fileID: 1840921532545725537, guid: 742bef4b127f576478bf7df96c6ea365, type: 3}
+  e2poseOptions:
+    aspectMode: 1
+    mean: {x: 0.485, y: 0.456, z: 0.406}
+    std: {x: 0.229, y: 0.224, z: 0.225}
+    executionProvider:
+      executionProviderPriorities: 00000000
+    maxDetections: 10
+    probThreshold: 0.5
+    keypointCount: 17
   uiBoundingBox: {fileID: 4593529428410748805, guid: 8da45bc31d7b6b248a402c2d1ef86781, type: 3}
